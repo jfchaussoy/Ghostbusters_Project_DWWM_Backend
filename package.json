@@ -1,0 +1,13 @@
+{
+  "name": "ghostbusters_project_dwwm_backend",
+  "version": "1.0.0",
+  "description": "Projet reprenant les demandes du REAC pour le passage du diplôme de DWWM",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
