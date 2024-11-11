@@ -1,0 +1,38 @@
+### Créer un nouvel utilisateur
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "usernametest",
+  "email": "test.test.com",
+  "password": "test123"
+}
+
+###
+
+### Obtenir tous les utilisateurs
+GET http://localhost:3000/users
+
+###
+
+### Obtenir un utilisateur par ID
+GET http://localhost:3000/users/1
+
+###
+
+### Mettre à jour un utilisateur
+PUT http://localhost:3000/users/6
+Content-Type: application/json
+
+{
+  "username": "usernametestmodification",
+  "email": "test.test.com",
+  "password": "test123"
+}
+
+###
+
+### Supprimer un utilisateur
+DELETE http://localhost:3000/users/1
+
+###

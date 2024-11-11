@@ -1,14 +1,13 @@
 const express = require('express');
 const { sequelize, testConnection, synchronizeDatabase } = require('./app/sequelize');
 require('dotenv').config();
+const userRoutes = require('./app/routes/userRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.get('/', (req, res) => {
-    res.send("⚡️ Proton Pack charged and ready! Server is up and running!");
-});
+app.use('/users', userRoutes)
 
 const startServer = async () => {
     try {
